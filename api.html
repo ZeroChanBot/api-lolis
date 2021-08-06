@@ -1,129 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
 
+<html>
+    <title>Zahirr Python APIs </title>
+    <meta name="description" content="Zahirr ApI.">
+<style>
+table, th, td {border: 1px solid blue; padding: 5px;}
+
+table {border-collapse: collapse;}
+
+th.eg1 {width: 21%;}
+
+th.eg2 {width: 30%;}
+
+th.eg4 {width: 5%;}
+
+th.eg3 {width: 5%;}
+</style>
+<style>
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
+<style>
+.hidden {
+	vissibilty: hidden;
+}
+</style>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-	<title>Aria Api'S</title>
-
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css?family=Oswald:700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lato:400" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
-
-	<link type="https://ariaputrapratama.herokuapp.com/text/css" rel="stylesheet" href="{{ url_for('static', filename='https://ariaputrapratama.herokuapp.com/css-api/font-awesome.min.css') }}" />
-  <link type="https://ariaputrapratama.herokuapp.com/text/css" rel="stylesheet" href="{{ url_for('static', filename='https://ariaputrapratama.herokuapp.com/css-api/gaya.css') }}" />
-  <script src="{{url_for('static', filename='js.js')}}"></script>
-
-	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-		  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-		<![endif]-->
-    <script>
-      alert(`KALO LU IRI BILANG AJA SI ANJING`)
-    </script>
-            <style>
-            .center {
-              margin-left: auto;
-              margin-right: auto;
-              width: 50%;
-            }
-.marquee {
- height: 40px;	
- overflow: hidden;
- position: relative;
-}
-.marquee h3 {
- font-size: 1em;
- color: rgb(0, 0, 0);
- position: absolute;
- width: 100%;
- height: 100%;
- margin: 0;
- line-height: 50px;
- text-align: center;
- /* Starting position */
- -moz-transform:translateX(100%);
- -webkit-transform:translateX(100%);	
- transform:translateX(100%);
- /* Apply animation to this element */	
- -moz-animation: marquee 15s linear infinite;
- -webkit-animation: marquee 15s linear infinite;
- animation: marquee 15s linear infinite;
-}
-/* Move it (define the animation) */
-@-moz-keyframes marquee {
- 0%   { -moz-transform: translateX(100%); }
- 100% { -moz-transform: translateX(-100%); }
-}
-@-webkit-keyframes marquee {
- 0%   { -webkit-transform: translateX(100%); }
- 100% { -webkit-transform: translateX(-100%); }
-}
-@keyframes marquee {
- 0%   { 
- -moz-transform: translateX(100%); /* Firefox bug fix */
- -webkit-transform: translateX(100%); /* Firefox bug fix */
- transform: translateX(100%); 		
- }
- 100% { 
- -moz-transform: translateX(-100%); /* Firefox bug fix */
- -webkit-transform: translateX(-100%); /* Firefox bug fix */
- transform: translateX(-100%); 
- }
-}
-            </style>  
+        <base href="../" >
 </head>
-<body>
-	<div id="notfound">
-		<div class="notfound-bg">
-			<div></div>
-			<div></div>
-			<div></div>
-			<div></div>
-    </div>
-    <div class="notfound">
-      <div class="notfound-404">
-        <h1 class="center">Aria Api'S</h1>
-        <div class="marquee">
-  <h3>WOY BABU</h3>
-  </div>
-        <table class="center">
-          <tr>
-            <th class="eg1">API</th>
-            <th class="eg4">Parameter</th>
-            <th class="eg3">Usage</th>
-          </tr>
-         <tr>
-            <td>Random Shota</td>
-            <td>username</td>
-            <td><a target="_blank" rel="noopener noreferrer" href="/shota">Example</a></td>
-          </tr>
-          <tr>
-            <td>Random Loli</td>
-            <td>-</td>
-            <td><a target="_blank" rel="noopener noreferrer" href="/loli">Example</a></td>
-          </tr>
-          <tr>
-            <td>Random Nsfw Loli</td>
-            <td>-</td>
-            <td><a target="_blank" rel="noopener noreferrer" href="/nsfwloli">Example</a></td>
-          </tr>
-          <tr>
-            <td>Wikipedia.</td>
-            <td>q</td>
-            <td><a target="_blank" rel="noopener noreferrer" href="/api/wiki?q=makanan">Example</a></td>
-          </tr>
-        </table>
-      </div>
-    </div>
-  </div>
-
-</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+  <audio>
+          <source src="/static", filename="Best.mp3">
+  </audio>
+  <body style="background-color: white" class="is-preload" id="div_root">
+  <h1 align="center">Zahir Python ApI</h1>
+  <div align=center id="findipwidget"></div><div class="findiplink" id="findipurl">Powered by <a href="http://www.find-ip.net/" target="_blank">Find-IP.net</a></div><script defer src="//api.find-ip.net/widget.js?width=240&bg=transparent&border=transparent&city=0&language=0&system=0&textcol=black&"></script>
+  <!-- <p align="center"><iframe src="http://free.timeanddate.com/clock/i72228t0/n108/tlid38/ftb/tt0/ta1/tb1" frameborder="0" width="267" height="19" allowTransparency="true"></iframe></p> -->
+    <table>
+      <tr>
+        <th class="eg1">API</th>
+        <th class="eg2">Description</th>
+        <th class="eg4">Parameter</th>
+        <th class="eg3">Usage</th>
+      </tr>
+     <tr>
+        <td bgcolor="green">Instagram Image/Video Downloader</td>
+        <td>Mengambil Link download dari link post Instagram.</td>
+        <td>url</td>
+        <td><a href="/api/ig?url=https://www.instagram.com/p/CFoVkHlFP3n/?igshid=sz6giw37qp9f">Example</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="yellow">Instagram Stalker</td>
+        <td>Menampilkan jumlah foll, jumlah post, bio, dll dari akun Instagram.</td>
+        <td>username</td>
+        <td><a href="/api/stalk?username=duar_amjay">Example</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="green">YouTube Audio Downloader</td>
+        <td>Mengambil Link download dari link YouTube.</td>
+        <td>url</td>
+        <td><a href="/api/yta?url=https://youtu.be/6l5V3BWDcMw">Example</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="yellow">YouTube Video Downloader</td>
+        <td>Mengambil Link download dari link YouTube.</td>
+        <td>url</td>
+        <td><a href="/api/ytv?url=https://youtu.be/6l5V3BWDcMw">Example</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="green">Jadwal Sholat sesuai Daerah</td>
+        <td>Mengambil Jadwal Sholat sesuai Daerah. Untuk melihat daerah-daerah yang tersedia, <a href="/daerah">lihat disini</a>.</td>
+        <td>daerah</td>
+        <td><a href="/api/jadwalshalat?daerah=Tangerang">Example</a></td>
+      </tr>
+      <tr>
+      	<td bgcolor="yellow">Informasi Cuaca</td>
+      	<td>Mengambil informasi cuaca sesuai tempat/daerah/lokasi.</td>
+      	<td>q</td>
+      	<td><a href="/api/cuaca?q=Tangerang">Example</a></td>
+      </tr>
+        <td bgcolor="green">Random Quotes</td>
+        <td>Mengambil kutipan kutipan dari tokoh-tokoh dunia.</td>
+        <td>-</td>
+        <td><a href="/api/randomquotes">Example</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="yellow">Random Anime Quotes</td>
+        <td>Mengambil kutipan kutipan dari tokoh-tokoh anime.</td>
+        <td>-</td>
+        <td><a href="/api/quotesnime/random">Example</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="green">Wikipedia.</td>
+        <td>Mencari apapun yang ada di wikipedia.</td>
+        <td>q</td>
+        <td><a href="/api/wiki?q=asu">Example</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="yellow">Random Waifu</td>
+        <td>Mengambil Random Waifu dari mywaifulist.moe</td>
+        <td>-</td>
+        <td><a href="/api/waifu">Example</a></td>
+      </tr>
+      <tr>
+      <tr>
+      	<td bgcolor="green">Info Gempa</td>
+      	<td>Mengambil data gempa dari bmkg</td>
+      	<td>-</td>
+      	<td><a href="/api/infogempa">Example</a></td>
+      </tr>
+        <td bgcolor="yellow">Random Nekonime</td>
+        <td>Mengambil Random Nekonime</td>
+        <td>-</td>
+        <td><a href="/api/nekonime">Example</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="green">Search Chord Guitar</td>
+        <td>Mencari chord gitar dari chordindonesia.com.</td>
+        <td>q</td>
+        <td><a href="/api/chord?q=aku+bukan+boneka">Example</a></td>
+      </tr>
+      <tr>
+        <td bgcolor="yellow">Dewabatch scraper</td>
+        <td>Mencari info anime dari website dewabatch.com</td>
+        <td>q</td>
+        <td><a href="/api/dewabatch?q=darling+in+the+franxx">Example</a></td>
+      </tr>
+      <tr>
+      	<td bgcolor="green">Kusonime scraper</td>
+      	<td>Mencari info anime dari website kusonime.com</td>
+      	<td>q</td>
+      	<td><a href="/api/kuso?q=kanojo+okarishimasu">Example</a></td>
+      </tr>
+      <tr>
+      	<td bgcolor="yellow">Otakudesu scraper</td>
+      	<td>Mencari info anime dari website otakudesu.tv</td>
+      	<td>q</td>
+      	<td><a href="/api/otakudesu?q=kanojo+okarishimasu">Example</a></td>
+   	  </tr>
+   	  <tr>
+   	  	<td bgcolor="green">Spam es em es</td>
+   	  	<td>Mengirim spam OTP sms</td>
+   	  	<td>no&jum</td>
+   	  	<td><a href="/api/spamsms?no=085812345678&jum=3">Example</a></td>
+   	  </tr>
+   	  <tr>
+   	  	<td bgcolor="yellow">Komiku scraper</td>
+   	  	<td>Mencari info manga dari website komiku.co.id</td>
+   	  	<td>q</td>
+   	  	<td><a href="/api/komiku?q=kanojo+okarishimasu">Example</a></td>
+   	  </tr>
+   	  <tr>
+   	  	<td bgcolor="green">Spam call</td>
+   	  	<td>Mengirim spam OTP call</td>
+   	  	<td>no</td>
+   	  	<td><a href="/api/spamcall?no=85671568291">Example</a></td>
+   	  </tr>
+      <!--<tr>
+      	<td bgcolor="green">Brainly scraper</td>
+      	<td>Mencari apapun di brainly</td>
+      	<td>q</td>
+      	<td><a href="/api/brainly?q=asw">Example</a></td>
+      </tr>-->
+    </table>
+    <div align=center><b>Total Website Visitor : </b><img src="https://www.cutercounter.com/hits.php?id=gqpxcn&style=1" border="0" alt="zahirr"></img></div>
+    <p align="center">© 2021 <a href="https://wa.me/6283898698875">Zahirrrrrr</a>.</p>
+  </body>
 
 </html>

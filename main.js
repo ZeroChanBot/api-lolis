@@ -31,6 +31,15 @@ router.all('/', async (req, res) => {
    res.send({ status: 400, response: 'Server Error!' })
    }
    })
+router.all('/bucin', async (req, res) => {
+   try {
+   json = JSON.parse(fs.readFileSync('lib/bucin.json').toString())
+   random = json[Math.floor(Math.random() * json.length)]
+   res.send({ status: 200, url: random })
+   } catch (e) {
+   res.send({ status: 400, response: 'Server Error!' })
+   }
+   })
  router.all('/shota', async (req, res) => {
    try {
    json = JSON.parse(fs.readFileSync('lib/shotas.json').toString())

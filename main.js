@@ -22,11 +22,20 @@ router.all('/', async (req, res) => {
    res.sendFile(__path + '/api.html')
    })
 
- router.all('/loli', async (req, res) => {
+router.all('/loli', async (req, res) => {
    try {
    json = JSON.parse(fs.readFileSync('lib/lolis.json').toString())
    random = json[Math.floor(Math.random() * json.length)]
    res.send({ status: 200, url: random })
+   } catch (e) {
+   res.send({ status: 400, response: 'Server Error!' })
+   }
+   })
+router.all('/couple', async (req, res) => {
+   try {
+   json = JSON.parse(fs.readFileSync('lib/couple.json').toString())
+   random = json[Math.floor(Math.random() * json.length)]
+   res.send({ status: 200, result: random })
    } catch (e) {
    res.send({ status: 400, response: 'Server Error!' })
    }

@@ -31,6 +31,15 @@ router.all('/loli', async (req, res) => {
    res.send({ status: 400, response: 'Server Error!' })
    }
    })
+router.all('/cerpen', async (req, res) => {
+   try {
+   json = JSON.parse(fs.readFileSync('lib/cerpen.json').toString())
+   random = json[Math.floor(Math.random() * json.length)]
+   res.send({ status: 200, result: random })
+   } catch (e) {
+   res.send({ status: 400, response: 'Server Error!' })
+   }
+   })
 router.all('/couple', async (req, res) => {
    try {
    json = JSON.parse(fs.readFileSync('lib/couple.json').toString())
